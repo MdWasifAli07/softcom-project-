@@ -1,0 +1,17 @@
+{
+  "model_labels": {
+    "0": "BENIGN",
+    "1": "ATTACK"
+  },
+  "threshold": 0.5,
+  "meta_features": [
+    "deberta_prob",
+    "tfidf_xgb_prob"
+  ],
+  "deberta_model_name": "microsoft/deberta-v3-base",
+  "max_length": 256,
+  "weights_reference": {
+    "deberta": 0.6,
+    "tfidf_xgboost": 0.4
+  }
+}
